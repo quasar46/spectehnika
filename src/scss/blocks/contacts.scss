@@ -1,0 +1,24 @@
+.contacts {
+    display: flex;
+    position: relative;
+    background: #fff;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        // max-width: 1920px;
+        // width: 100%;
+        // padding: 0 30px;
+        // margin: 0 auto;
+    }
+}
+
+.contacts__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    @media (max-width: 767px) {
+        position: relative;
+    }
+}

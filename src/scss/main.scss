@@ -1,0 +1,29 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+// @import "../fonts/stylesheet.scss";
+@import "variables.scss";
+@import "base.scss";
+
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/rent";
+@import "blocks/title-inner";
+@import "blocks/rent-list";
+@import "blocks/offers";
+@import "blocks/offers-list";
+@import "blocks/rent-card";
+@import "blocks/rent-card-list";
+@import "blocks/about";
+@import "blocks/about-wrapper";
+@import "blocks/advantages-list";
+@import "blocks/advantages-wrapper";
+@import "blocks/advantages";
+@import "blocks/feedback";
+@import "blocks/feedback-wrapper";
+@import "blocks/contacts-information";
+@import "blocks/contacts";
+@import "blocks/contacts-map";
+@import "blocks/main-menu";
+@import "blocks/logo";
+@import "blocks/footer";
+@import "blocks/mobile-menu";
+@import "blocks/rent-cards"

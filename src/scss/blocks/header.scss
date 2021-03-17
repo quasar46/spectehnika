@@ -1,0 +1,39 @@
+.header {
+    padding: 20px 0;
+    background-color: #fff;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    @media (max-width: 1900px) {
+        padding: 24px 0;
+    }
+    @media (max-width: 767px) {
+        padding: 17px 0;
+    }
+}
+
+.header__address {
+    margin-left: auto;
+    display: flex;
+    li {
+        padding-right: 35px;
+        a {
+            display: flex;
+            align-items: flex-end;
+            text-decoration: none;
+            img {
+                margin-right: 15px;
+            }
+        }
+        a[href]:hover {
+            color: #feca40;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    @media (max-width: 1900px) {
+        display: none;
+    }
+}

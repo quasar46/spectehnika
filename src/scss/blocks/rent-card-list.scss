@@ -1,0 +1,78 @@
+.rent-card-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    .rent-card-list__list {
+        height: 290px;
+        overflow-y: auto;
+        @media (max-width: 1900px) {
+            height: 265px;
+        }
+        @media (max-width: 1365px) {
+            height: 195px;
+        }
+        @media (max-width: 767px) {
+            &.active {
+                height: auto;
+            }
+        }
+    }
+    @media (max-width: 1365px) {
+        margin-bottom: 25px;
+    }
+}
+
+.rent-card-list__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    @media (max-width: 1023px) {
+        text-align: center;
+    }
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.rent-card-list__row {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    span {
+        letter-spacing: 2px;
+    }
+}
+
+.rent-card-list__col1 {
+    font-size: 18px;
+    @media (max-width: 1365px) {
+        font-size: 14px;
+    }
+    @media (max-width: 767px) {
+        font-size: 12px;
+        // padding-right: 10px;
+    }
+}
+
+.rent-card-list__col2 {
+    font-size: 16px;
+    font-weight: 600;
+
+    @media (max-width: 1365px) {
+        font-size: 14px;
+    }
+    @media (max-width: 767px) {
+        padding-left: 10px;
+    }
+}
+
+.rent-card__show {
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
+        margin: 0 auto;
+        width: 25px;
+        margin-bottom: 30px;
+    }
+}

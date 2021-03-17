@@ -1,0 +1,30 @@
+.title-inner {
+    text-align: center;
+    margin-bottom: 58px;
+    letter-spacing: 1px;
+    span {
+        font-size: 30px;
+        font-weight: 400;
+        position: relative;
+        text-transform: uppercase;
+        border-bottom: 3px solid #feca40;
+        @media (max-width: 1365px) {
+            font-size: 24px;
+        }
+        @media (max-width: 1023px) {
+            font-size: 18px;
+        }
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 1900px) {
+        margin-bottom: 55px;
+    }
+    @media (max-width: 1365px) {
+        margin-bottom: 45px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}

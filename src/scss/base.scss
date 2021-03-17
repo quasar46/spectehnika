@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	outline: none;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font-base;
+	color: $color-text;
+	background-color: #f9f9f9;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	overflow-x: hidden;
+}
+
+.container {
+	position: relative;
+	max-width: 1920px;
+	width: 100%;
+	padding: 0 100px;
+	margin: 0 auto;
+	@media (max-width: 1023px) {
+		padding: 0 50px;
+	}
+	@media (max-width: 767px) {
+		padding: 0 20px;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $color-base;
+}
+
+ul,
+ol,
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.mCSB_dragger_bar {
+	width: 4px !important;
+	background: #c4c4c4 !important;
+	border-radius: 4px !important;
+}
+
+.mCSB_draggerRail {
+	width: 1px !important;
+	background: #e5e5e5 !important;
+}

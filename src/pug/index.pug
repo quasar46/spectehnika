@@ -1,0 +1,716 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        //- header
+        .header
+            .container
+                a(href="/").logo
+                    img(src="images/logo.svg" alt="")
+
+                ul.main-menu.main-menu--header
+                    li
+                        a(href="#anchor1") АРЕНДА СПЕЦТЕХНИКИ
+                    li
+                        a(href="#anchor2") СПЕЦПРЕДЛОЖЕНИЯ
+                    li
+                        a(href="#anchor3") О КОМПАНИИ
+                    li
+                        a(href="#anchor4") ПРЕИМУЩЕСТВА
+                    li
+                        a(href="#anchor5") КОНТАКТЫ
+
+                ul.header__address
+                    li
+                        a
+                            img(src="images/marker.svg" alt="")
+                            span г. Курск, улица ВЧК 188 
+                    li
+                        a(href="tel:+74712550994")
+                            img(src="images/phone.svg" alt="")
+                            span +7 (4712) 550-994
+                    li
+                        a(href="tel:+79508784455")
+                            img(src="images/phone.svg" alt="")
+                            span +7 (950) 878 44-55
+
+                .mobile-menu
+                    span.mobile-menu__label Меню
+                    .mobile-menu__show
+                        ul
+                            li
+                                a(href="#anchor1") АРЕНДА СПЕЦТЕХНИКИ
+                            li
+                                a(href="#anchor2") СПЕЦПРЕДЛОЖЕНИЯ
+                            li
+                                a(href="#anchor3") О КОМПАНИИ
+                            li
+                                a(href="#anchor4") ПРЕИМУЩЕСТВА
+                            li
+                                a(href="#anchor5") КОНТАКТЫ
+                        ul
+                            li
+                                a
+                                    img(src="images/marker.svg" alt="")
+                                    span г. Курск, улица ВЧК 188
+                            li
+                                a(href="tel:+74712550994")
+                                    img(src="images/phone.svg" alt="")
+                                    span +7 (4712) 550-994
+                            li
+                                a(href="tel:+79508784455")
+                                    img(src="images/phone.svg" alt="")
+                                    span +7 (950) 878 44-55
+
+        //- main
+        main
+            //- hero
+            section.hero
+                .container
+                    .hero__content
+                        h1.hero__title АРЕНДА СПЕЦТЕХНИКИ В КУРСКЕ
+                        a(href="#feedback").hero__button 
+                            span ЗАКАЗАТЬ СПЕЦТЕХНИКУ
+
+            //- rent
+            section.rent#anchor1
+                .container
+                    h2.title-inner
+                        span АРЕНДА СПЕЦТЕХНИКИ
+
+                    .tabs-wrapper
+                        //- tabs
+                        ul.rent-list
+
+                            li.rent-list__item
+                                a(href="#item-tab1").item-tab
+                                    .rent-list__top-block
+                                        picture
+                                            source(srcset="images/rent/1-mobile.png" media="(max-width: 767px)")
+                                            source(srcset="images/rent/1-1024.png" media="(max-width: 1365px)")
+                                            source(srcset="images/rent/1-1366.png" media="(max-width: 1900px)")
+                                            img(src="images/rent/1.png" alt="")
+                                        span Автовышки
+                                    .rent-list__bottom-block
+                                        span Mitsubishi
+                                        span Kanter
+                                        span Isuzu
+
+                            li.rent-list__item
+                                a(href="#item-tab2").item-tab
+                                    .rent-list__top-block
+                                        picture
+                                            source(srcset="images/rent/2-mobile.png" media="(max-width: 767px)")
+                                            source(srcset="images/rent/2-1024.png" media="(max-width: 1365px)")
+                                            source(srcset="images/rent/2-1366.png" media="(max-width: 1900px)")
+                                            img(src="images/rent/2.png" alt="")
+                                        span АВТОКРАНЫ
+                                    .rent-list__bottom-block
+                                        span МАЗ
+                                        span КАМАЗ
+
+                            li.rent-list__item
+                                a(href="#item-tab3").item-tab
+                                    .rent-list__top-block
+                                        picture
+                                            source(srcset="images/rent/3-mobile.png" media="(max-width: 767px)")
+                                            source(srcset="images/rent/3-1024.png" media="(max-width: 1365px)")
+                                            source(srcset="images/rent/3-1366.png" media="(max-width: 1900px)")
+                                            img(src="images/rent/3.png" alt="")
+                                        span САМОСВАЛЫ
+                                    .rent-list__bottom-block
+                                        span Mitsubishi
+                                        span Kanter
+                                        span Isuzu
+
+                            li.rent-list__item
+                                a(href="#item-tab4").item-tab
+                                    .rent-list__top-block
+                                        picture
+                                            source(srcset="images/rent/4-mobile.png" media="(max-width: 767px)")
+                                            source(srcset="images/rent/4-1024.png" media="(max-width: 1365px)")
+                                            source(srcset="images/rent/4-1366.png" media="(max-width: 1900px)")
+                                            img(src="images/rent/4.png" alt="")
+                                        span КРАНЫ-МАНИПУЛЯТОРЫ
+                                    .rent-list__bottom-block
+                                        span Mitsubishi
+                                        span Kanter
+                                        span Isuzu
+
+                            li.rent-list__item
+                                a(href="#item-tab5").item-tab
+                                    .rent-list__top-block
+                                        picture
+                                            source(srcset="images/rent/5-mobile.png" media="(max-width: 767px)")
+                                            source(srcset="images/rent/5-1024.png" media="(max-width: 1365px)")
+                                            source(srcset="images/rent/5-1366.png" media="(max-width: 1900px)")
+                                            img(src="images/rent/5.png" alt="")
+                                        span ЭКСКАВАТОРЫ ПОГРУЗЧИКИ
+                                    .rent-list__bottom-block
+                                        span Mitsubishi
+                                        span Kanter
+                                        span Isuzu
+
+                            li.rent-list__item
+                                a(href="#item-tab6").item-tab
+                                    .rent-list__top-block
+                                        picture
+                                            source(srcset="images/rent/5-mobile.png" media="(max-width: 767px)")
+                                            source(srcset="images/rent/5-1024.png" media="(max-width: 1365px)")
+                                            source(srcset="images/rent/5-1366.png" media="(max-width: 1900px)")
+                                            img(src="images/rent/5.png" alt="")
+                                        span ЭКСКАВАТОРЫ ПОГРУЗЧИКИ
+                                    .rent-list__bottom-block
+                                        span Mitsubishi
+                                        span Kanter
+                                        span Isuzu
+
+                            li.rent-list__button
+                                img(src="images/btn-down.svg" alt="")
+
+                        //- tab-content
+                        .rent-cards
+                            .rent-card#item-tab1
+                                .rent-card__inner
+                                    .rent-card__picture
+                                        h2.rent-card__title ЭКСКАВАТОР-ПОГРУЗЧИК JCB
+                                        .rent-card__slider
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+
+                                    .rent-card__content
+                                        h2.rent-card__title ХАРАКТЕРИСТИКИ:
+                                        .rent-card-list
+                                            span.rent-card-list__title ГАБАРИТЫ ПРИ РАБОТЕ ПОГРУЗЧИКОМ
+                                            ul.rent-card-list__list.mycustom-scroll(data-mcs-theme="3d-dark")
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Глубина копания (м)
+                                                    span.rent-card-list__col2 0,07
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина ковша (м)
+                                                    span.rent-card-list__col2 2,35
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота выгрузки (м)
+                                                    span.rent-card-list__col2 2,74
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 3,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 17,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Объем загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 74,21
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+
+                                        .rent-card__show
+                                            img(src="images/btn-down.svg" alt="")
+
+                                        .rent-card__order
+                                            .col
+                                                span.price-rent Стоимость аренды:
+                                                span.count 1 300 Р./час
+                                            .col
+                                                a(href="#feedback").rent-card__btn Заказать
+
+                            .rent-card#item-tab2
+                                .rent-card__inner
+                                    .rent-card__picture
+                                        h2.rent-card__title ЭКСКАВАТОР-ПОГРУЗЧИК JCB
+                                        .rent-card__slider
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+
+                                    .rent-card__content
+                                        h2.rent-card__title ХАРАКТЕРИСТИКИ:
+                                        .rent-card-list
+                                            span.rent-card-list__title ГАБАРИТЫ ПРИ РАБОТЕ ПОГРУЗЧИКОМ
+                                            ul.rent-card-list__list.mycustom-scroll(data-mcs-theme="3d-dark")
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Глубина копания (м)
+                                                    span.rent-card-list__col2 0,07
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина ковша (м)
+                                                    span.rent-card-list__col2 2,35
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота выгрузки (м)
+                                                    span.rent-card-list__col2 2,74
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 3,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 17,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Объем загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 74,21
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+
+                                        .rent-card__show
+                                            img(src="images/btn-down.svg" alt="")
+
+                                        .rent-card__order
+                                            .col
+                                                span.price-rent Стоимость аренды:
+                                                span.count 1 300 Р./час
+                                            .col
+                                                a(href="#feedback").rent-card__btn Заказать
+
+                            .rent-card#item-tab3
+                                .rent-card__inner
+                                    .rent-card__picture
+                                        h2.rent-card__title ЭКСКАВАТОР-ПОГРУЗЧИК JCB
+                                        .rent-card__slider
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+
+                                    .rent-card__content
+                                        h2.rent-card__title ХАРАКТЕРИСТИКИ:
+                                        .rent-card-list
+                                            span.rent-card-list__title ГАБАРИТЫ ПРИ РАБОТЕ ПОГРУЗЧИКОМ
+                                            ul.rent-card-list__list.mycustom-scroll(data-mcs-theme="3d-dark")
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Глубина копания (м)
+                                                    span.rent-card-list__col2 0,07
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина ковша (м)
+                                                    span.rent-card-list__col2 2,35
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота выгрузки (м)
+                                                    span.rent-card-list__col2 2,74
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 3,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 17,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Объем загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 74,21
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+
+                                        .rent-card__show
+                                            img(src="images/btn-down.svg" alt="")
+
+                                        .rent-card__order
+                                            .col
+                                                span.price-rent Стоимость аренды:
+                                                span.count 1 300 Р./час
+                                            .col
+                                                a(href="#feedback").rent-card__btn Заказать                            
+
+                            .rent-card#item-tab4
+                                .rent-card__inner
+                                    .rent-card__picture
+                                        h2.rent-card__title ЭКСКАВАТОР-ПОГРУЗЧИК JCB
+                                        .rent-card__slider
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+
+                                    .rent-card__content
+                                        h2.rent-card__title ХАРАКТЕРИСТИКИ:
+                                        .rent-card-list
+                                            span.rent-card-list__title ГАБАРИТЫ ПРИ РАБОТЕ ПОГРУЗЧИКОМ
+                                            ul.rent-card-list__list.mycustom-scroll(data-mcs-theme="3d-dark")
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Глубина копания (м)
+                                                    span.rent-card-list__col2 0,07
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина ковша (м)
+                                                    span.rent-card-list__col2 2,35
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота выгрузки (м)
+                                                    span.rent-card-list__col2 2,74
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 3,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 17,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Объем загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 74,21
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+
+                                        .rent-card__show
+                                            img(src="images/btn-down.svg" alt="")
+
+                                        .rent-card__order
+                                            .col
+                                                span.price-rent Стоимость аренды:
+                                                span.count 1 300 Р./час
+                                            .col
+                                                a(href="#feedback").rent-card__btn Заказать                            
+
+                            .rent-card#item-tab5
+                                .rent-card__inner
+                                    .rent-card__picture
+                                        h2.rent-card__title ЭКСКАВАТОР-ПОГРУЗЧИК JCB
+                                        .rent-card__slider
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+
+                                    .rent-card__content
+                                        h2.rent-card__title ХАРАКТЕРИСТИКИ:
+                                        .rent-card-list
+                                            span.rent-card-list__title ГАБАРИТЫ ПРИ РАБОТЕ ПОГРУЗЧИКОМ
+                                            ul.rent-card-list__list.mycustom-scroll(data-mcs-theme="3d-dark")
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Глубина копания (м)
+                                                    span.rent-card-list__col2 0,07
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина ковша (м)
+                                                    span.rent-card-list__col2 2,35
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота выгрузки (м)
+                                                    span.rent-card-list__col2 2,74
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 3,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 17,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Объем загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 74,21
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+
+                                        .rent-card__show
+                                            img(src="images/btn-down.svg" alt="")
+
+                                        .rent-card__order
+                                            .col
+                                                span.price-rent Стоимость аренды:
+                                                span.count 1 300 Р./час
+                                            .col
+                                                a(href="#feedback").rent-card__btn Заказать                            
+
+                            .rent-card#item-tab6
+                                .rent-card__inner
+                                    .rent-card__picture
+                                        h2.rent-card__title ЭКСКАВАТОР-ПОГРУЗЧИК JCB
+                                        .rent-card__slider
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+                                            .rent-card__item
+                                                picture
+                                                    source(srcset="images/rent-card/1-768.png" media="(max-width: 768px)")
+                                                    source(srcset="images/rent-card/1-1024.png" media="(max-width: 1365px)")
+                                                    source(srcset="images/rent-card/1-1366.png" media="(max-width: 1900px)")
+                                                    img(src="images/rent-card/1.png" alt="")
+
+                                    .rent-card__content
+                                        h2.rent-card__title ХАРАКТЕРИСТИКИ:
+                                        .rent-card-list
+                                            span.rent-card-list__title ГАБАРИТЫ ПРИ РАБОТЕ ПОГРУЗЧИКОМ
+                                            ul.rent-card-list__list.mycustom-scroll(data-mcs-theme="3d-dark")
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Глубина копания (м)
+                                                    span.rent-card-list__col2 0,07
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина ковша (м)
+                                                    span.rent-card-list__col2 2,35
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота выгрузки (м)
+                                                    span.rent-card-list__col2 2,74
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Высота загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 3,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Ширина загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 17,23
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Объем загрузки поверх бортов (м)
+                                                    span.rent-card-list__col2 74,21
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+                                                li.rent-card-list__row
+                                                    span.rent-card-list__col1 Емкость ковша погрузчика (м³)
+                                                    span.rent-card-list__col2 1,1
+
+                                        .rent-card__show
+                                            img(src="images/btn-down.svg" alt="")
+
+                                        .rent-card__order
+                                            .col
+                                                span.price-rent Стоимость аренды:
+                                                span.count 1 300 Р./час
+                                            .col
+                                                a(href="#feedback").rent-card__btn Заказать
+
+
+            //- offers
+            section.offers#anchor2
+                .container
+                    h2.title-inner 
+                        span СПЕЦПРЕДЛОЖЕНИЯ
+                    ul.offers-list
+                        li
+                            img(src="images/offers/1.png" alt="")
+                            p.offers-list__content Закажи 2 смены техники подряд и получи <i class="br"></i> скидку на вторую смену 30% Закажи 2 смены техники подряд и получи Закажи 2 смены техники подряд и получи
+                        li
+                            img(src="images/offers/2.png" alt="")
+                            p.offers-list__content При заказе смены экскаватора песок <i class="br"></i> для выравнивания
+                        li
+                            img(src="images/offers/3.png" alt="")
+                            p.offers-list__content При заказе монтажа бетонных колец скидка <i class="br"></i> на доставку 50%
+                        li
+                            img(src="images/offers/3.png" alt="")
+                            p.offers-list__content При заказе монтажа бетонных колец скидка <i class="br"></i> на доставку 50%
+
+            //- about
+            section.about#anchor3
+                .container
+                    h2.title-inner
+                        span О КОМПАНИИ
+                    .about-wrapper
+                        .about-wrapper__picture
+                            img(src="images/about/1.png" alt="")
+                        .about-wrapper__content
+                            p Действует на рынке аренды спецтехники Курска и Курской области с 2010 года. В начале мы занимались только грузоперевозками, но с годами в парке появилась спецтехника. За это время в фирме был приобретён большой опыт в области строительной техники и грузоперевозок, сложилась собственная материально-техническая и ремонтная инфраструктура. И в результате наша компания сегодня обладает собственным автопарком.
+                            .about-wrapper__hidden.active
+                                p Оказывает услуги крупнейшим строительным и производственным компаниям Курска и Курской области, а так же представителям малого бизнеса и частным заказчикам. Мы предлагаем конкурентноспособные цены на услуги, одновременно обеспечивая высокое качество сервиса. Получить квалифицированную и подробную информацию по спецтехнике, рассчитать стоимость аренды Вы можете у нашего оператора по телефону.
+                                p Относится с уважением к каждому заказу и несет ответственность за качество выполняемой работы. Для обеспечения безопасных условий труда мы регулярно контролируем и следим за техническим состоянием техники. Мы предъявляем самые жесткие требования к работе водителей и машинистов наших автовышек, которые в удобное для Вас время доставят в любой район Курска арендованную технику для проведения работ.
+                            picture#btn-click
+                                img(src="images/btn-down.svg" alt="")
+                        .clearfix
+
+            //- advantages
+            section.advantages#anchor4
+                .container
+                    .advantages-wrapper
+                        h2.title-inner 
+                            span НАШИ ПРЕИМУЩЕСТВА
+                        ul.advantages-list
+                            li.advantages-list__item
+                                img(src="images/advantages/1.png" alt="")
+                                //- span.advantages-list__name Работаем с НДС
+                            li.advantages-list__item
+                                img(src="images/advantages/2.png" alt="")
+                                //- span.advantages-list__name Подача техники от 1 часа
+                            li.advantages-list__item
+                                img(src="images/advantages/3.png" alt="")
+                                //- span.advantages-list__name Опыт сотрудников более 7 лет
+                            li.advantages-list__item
+                                img(src="images/advantages/4.png" alt="")
+                                //- span.advantages-list__name Работаем в выходные и праздничные дни
+                            li.advantages-list__item
+                                img(src="images/advantages/5.png" alt="")
+                                //- span.advantages-list__name Большой собственный автопарк
+                            li.advantages-list__item
+                                img(src="images/advantages/6.png" alt="")
+                                //- span.advantages-list__name Работаем по всей Курской области
+                            li.advantages-list__item
+                                img(src="images/advantages/7.png" alt="")
+                                //- span.advantages-list__name На рынке услуг спецтехники уже 10 лет
+
+            //- feedback
+            section.feedback#feedback
+                .container
+                    h2.title-inner
+                        span Обратная связь
+                    .feedback-wrapper
+                        form(action="get")
+                            .feedback-wrapper__windows
+                                .feedback-wrapper__col
+                                    .feedback-wrapper__phone
+                                        input(type="tel" placeholder="Ваш телефон*")
+                                    .feedback-wrapper__name
+                                        input(type="text" placeholder="Ваше имя*")
+                                .feedback-wrapper__col
+                                    .feedback-wrapper__textarea
+                                        textarea(placeholder="Комментарий")
+                            .feedback-wrapper__consent
+                                p
+                                    input(type="checkbox" id="check-consent")
+                                    label(for="check-consent") 
+                                        span я принимаю условия <a href="">пользовательского соглашения</a> и <a href="">политику конфиденциальности</a>
+                                p
+                                    input(type="submit" name="submit" value="Отправить")
+
+            //- contacts
+            section.contacts#anchor5
+                .contacts__overlay
+                    .contacts-information
+                        h2.title-inner
+                            span КОНТАКТНАЯ ИНФОРМАЦИЯ
+                        .contacts-information__row
+                            .contacts-information__col
+                                .item
+                                    .item__title
+                                        img(src="images/mail.svg" alt="")
+                                        span.name EMAIL:
+                                    a(href="mailto:spectehnika46@mail.ru") spectehnika46@mail.ru
+                                .item
+                                    .item__title
+                                        img(src="images/marker.svg" alt="")
+                                        span.name АДРЕС:
+                                    a г. Курск, улица ВЧК 188
+                            .contacts-information__col
+                                .item
+                                    .item__title
+                                        img(src="images/phone.svg" alt="")
+                                        span.name ТЕЛЕФОНЫ:
+                                    .contacts-information__link
+                                        a(href="tel:+74712550994") +7 (4712) 550-994
+                                        a(href="tel:+79508784455") +7 (950) 878 44-55
+                                        a(href="tel:+79508755623") +7 (950) 875 56-23
+                                        a(href="tel:+79045284470") +7 (904) 528 44-70
+
+                        .contacts-information__row.contacts-information__row--contract
+                            .item
+                                a(href="")
+                                    img(src="images/download.svg" alt="")
+                                    span Договор
+                            .item
+                                a(href="")
+                                    img(src="images/download.svg" alt="")
+                                    span Реквизиты
+
+                .contacts-map
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.543352983054!2d36.22396621615423!3d51.74138717967424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f03ee21645be5%3A0xefcf4f6dcba78625!2z0J7QntCeICLQodC_0LXRhtGC0LXRhdC90LjQutCwIDQ2Ig!5e0!3m2!1sru!2sru!4v1612257906661!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        //- footer
+        .footer
+            .container
+                .footer__mobile-menu
+                    span Меню
+                    img(src="images/btn-down.svg" alt="")
+                ul.main-menu.main-menu--footer
+                    li
+                        a(href="") АРЕНДА СПЕЦТЕХНИКИ
+                    li
+                        a(href="") СПЕЦПРЕДЛОЖЕНИЯ
+                    li
+                        a(href="") О КОМПАНИИ
+                    li
+                        a(href="") ПРЕИМУЩЕСТВА
+                    li
+                        a(href="") КОНТАКТЫ
+
+                .footer__copyright-develop
+                    span.footer__copyright © 2020 ИП Сопин А.С.
+                    span.footer__develop Разработано в <a href="http://www.kvokka.com" target="_blank">Kvokka</a>
+
+
+
+
+
+        include modules/script.pug

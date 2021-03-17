@@ -1,0 +1,119 @@
+.contacts-information {
+    // flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    padding-left: 150px;
+    // max-width: 630px;
+    // width: 100%;
+    width: 40%;
+    .title-inner {
+        text-align: left;
+        margin-bottom: 40px;
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+    }
+    .item {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 36px;
+        a {
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 15px;
+            }
+            &[href]:hover {
+                color: #feca40;
+            }
+            @media (max-width: 1365px) {
+                font-size: 14px;
+            }
+        }
+    }
+    .name {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 300;
+        color: #787878;
+        padding-left: 15px;
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 1900px) {
+        width: 49%;
+        padding-left: 100px;
+    }
+    @media (max-width: 1365px) {
+        width: 51%;
+        padding-top: 50px;
+    }
+    @media (max-width: 1023px) {
+        padding-left: 50px;
+        padding-top: 55px;
+    }
+    @media (max-width: 767px) {
+        padding: 55px 30px;
+        width: 100%;
+    }
+}
+
+.contacts-information__row {
+    display: flex;
+    &:last-child {
+        .item {
+            a {
+                margin-right: 30px;
+            }
+        }
+    }
+    @media (max-width: 1023px) {
+        flex-direction: column;
+    }
+    &--contract {
+        @media (max-width: 1023px) {
+            display: flex;
+            flex-direction: row;
+        }
+        .item {
+            @media (max-width: 767px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.contacts-information__col {
+    margin-right: 70px;
+    flex: 0 1 auto;
+    &:last-child {
+        margin-right: 0;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        .item__title {
+            display: flex;
+            align-items: center;
+        }
+    }
+    @media (max-width: 767px) {
+        margin-right: 0;
+    }
+}
+
+.item {
+    .contacts-information__link {
+        @media (max-width: 1023px) {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                width: 50%;
+            }
+        }
+    }
+}

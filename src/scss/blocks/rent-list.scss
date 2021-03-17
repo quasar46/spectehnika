@@ -1,0 +1,202 @@
+.rent-list {
+    // display: flex;
+    // justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 25px;
+    padding-left: 1px;
+    padding-right: 1px;
+    overflow: hidden;
+    .slick-track {
+        display: flex;
+    }
+    .slick-list {
+        margin-right: -7px;
+        padding: 1px;
+        @media (max-width: 1023px) {
+            margin-right: -20px;
+        }
+    }
+    .slick-next {
+        width: 32px;
+        height: 32px;
+        background-image: url("../images/arrow-next.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        right: -47px;
+        @media (max-width: 1365px) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .slick-prev {
+        width: 32px;
+        height: 32px;
+        background-image: url("../images/arrow-prev.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: -47px;
+        @media (max-width: 1365px) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    @media (max-width: 1023px) {
+        margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 25px 0;
+        padding-bottom: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        &:hover {
+            outline: 1px solid #feca40;
+        }
+    }
+}
+
+.rent-list__top-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    background: #fff;
+    height: 300px;
+    padding: 0 30px;
+    padding-bottom: 50px;
+    img {
+        margin-bottom: 10px;
+    }
+    span {
+        text-transform: uppercase;
+        color: #787878;
+    }
+    @media (max-width: 1900px) {
+        height: 279px;
+    }
+    @media (max-width: 1365px) {
+        height: 220px;
+        padding-top: 18px;
+    }
+    @media (max-width: 767px) {
+        height: auto;
+        padding: 0;
+    }
+}
+
+.rent-list__bottom-block {
+    background: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #787878;
+    padding: 40px 0;
+    height: 100%;
+
+    span {
+        font-weight: 300;
+        font-size: 21px;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: 1365px) {
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.rent-list__top-block {
+    // display: flex;
+    // flex-direction: column;
+    text-align: center;
+    align-items: center;
+    span {
+        font-size: 21px;
+        font-weight: 300;
+        text-transform: uppercase;
+        @media (max-width: 1365px) {
+            font-size: 18px;
+        }
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    picture {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.rent-list__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7px;
+    padding-left: 1px;
+    padding-right: 1px;
+    height: 495px;
+    cursor: pointer;
+    a {
+        display: block;
+        height: 100%;
+        overflow: hidden;
+        padding: 1px;
+        &.active {
+            .rent-list__top-block {
+                outline: 1px solid #feca40;
+                @media(max-width: 767px) {
+                    outline: none;
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            &.active {
+                span {
+                    color: #feca40;
+                }
+            }
+        }
+    }
+    &:hover {
+        .rent-list__top-block {
+            outline: 1px solid #feca40;
+            @media (max-width: 767px) {
+                outline: none;
+            }
+        }
+    }
+    @media (max-width: 1900px) {
+        height: 474px;
+    }
+    @media (max-width: 1365px) {
+        height: 393px;
+    }
+    @media (max-width: 1023px) {
+        margin-right: 20px;
+    }
+    @media (max-width: 767px) {
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.rent-list__button {
+    display: none !important;
+    @media (max-width: 767px) {
+        display: block !important;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        img {
+            margin: 0 auto;
+        }
+    }
+}

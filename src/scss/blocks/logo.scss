@@ -1,0 +1,13 @@
+.logo {
+    margin-right: 50px;
+    @media (max-width: 1900px) {
+        max-width: 154px;
+        flex: 1 0 auto;
+        // &--footer {
+        //     display: none;
+        // }
+    }
+    @media (max-width: 767px) {
+        max-width: 152px;
+    }
+}
